@@ -28,8 +28,9 @@ namespace Shelter.Models
 
         [Required(ErrorMessage = "This is a required field.")]
         [ForeignKey("ReferencedCategory")]
+        [Display(Name = "Category")]
         public int CategoryId { get; set; }
-
+        [Display(Name = "Category")]
         public virtual Category? ReferencedCategory { get; set; }
     }
 }
